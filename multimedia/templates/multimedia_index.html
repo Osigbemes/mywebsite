@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+<center><h1><i>Medias</i></h1></center>
+<div class="row">
+{% for multimedia in media %}
+    <div class="col-md-4">
+        <div class="card mb-2">
+            <img class="card-img-top" src="{% static multimedia.image %}">
+            <div class="card-body">
+                <h5 class="card-title">{{ multimedia.title }}</h5>
+                <p class="card-text">{{ multimedia.description }}</p>
+                <a href="{% url 'multimedia_detail' multimedia.pk %}"
+                   class="btn btn-primary">
+                    Read More
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

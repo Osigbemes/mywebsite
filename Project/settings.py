@@ -25,7 +25,7 @@ SECRET_KEY = 'yl8v225lz*@s+)sq#%&!af0+i7z2)okrwr!xbr8ph=@_m8v2^v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['multimediaapp.herokuapp.com']
+ALLOWED_HOSTS = ['mediadjangoapp.herokuapp.com']
 
 
 # Application definition
